@@ -1,5 +1,5 @@
 body {
-  background: #3d3d3d;
+  background: #121212;
 }
 
 .menu .logo {
@@ -13,4 +13,9 @@ body {
 .menu .links ul li a {
   text-decoration: none;
   color: white;
+}
+
+section.one .row a {
+  background: #44BAFF;
+  padding: 13px 40px;
 }/*# sourceMappingURL=style.css.map */
