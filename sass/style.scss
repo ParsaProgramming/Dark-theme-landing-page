@@ -1,0 +1,26 @@
+body {
+    background: #3d3d3d;
+}
+
+$txtColor: white;
+
+.menu {
+    .logo{
+        color: $txtColor;
+    }
+    .links{
+        ul{
+            li{
+                display: inline-block;
+                list-style: none;
+                margin-right: 20px;
+                a{
+                    text-decoration: none;
+                    color: $txtColor;
+                }
+            }
+        }
+    }
+}
+
+// template color = #15DAFD;
