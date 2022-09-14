@@ -8,6 +8,7 @@ $brighterColor: #3d3d3d;
 .menu {
 
     .links {
+        transition: all 0.5s ease;
         ul {
             li {
                 display: inline-block;
@@ -16,11 +17,22 @@ $brighterColor: #3d3d3d;
 
                 a {
                     text-decoration: none;
-                    color: $txtColor;
+                    color: white;
                 }
+                i{
+                    display:none;
+                }
+
+
             }
+
         }
     }
+
+    i.bi-justify {
+        display: none;
+    }
+
 }
 
 section.one {
@@ -41,7 +53,7 @@ section.two {
     }
 
     h3 {
-        color: $txtColor;
+        color: white;
         font-weight: normal;
     }
 
@@ -61,6 +73,7 @@ section.four {
         .col-lg-4 {
             .card {
                 background: $brighterColor;
+
                 .image-place {
                     width: 50px;
                     height: 50px;
@@ -76,16 +89,17 @@ section.four {
     }
 }
 
-section.five{
+section.five {
     margin-top: 150px;
 }
 
-section.five{
+section.five {
     background: $brighterColor;
-    .field{
-        button{
-            border:none;
-            outline:none;
+
+    .field {
+        button {
+            border: none;
+            outline: none;
             margin-left: 20px;
             width: 200px;
             padding: 10px;
@@ -94,10 +108,11 @@ section.five{
     }
 }
 
-footer{
+footer {
     background: #232323;
-    .social{
-        i{
+
+    .social {
+        i {
             width: 50px;
             height: 50px;
             background: #3d3d3d;
@@ -112,9 +127,52 @@ footer{
     }
 }
 
-footer{
-    textarea{
+footer {
+    textarea {
         height: 100px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .menu {
+        .links {
+            height: 100%;
+            width: 200px;
+            background: #232323;
+            position: fixed;
+            right: -200px;
+            top: 0;
+            z-index: 100;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+
+            i{
+                display: block;
+                color: white;
+                position: absolute;
+                right: 10px;
+                top:10px;
+                cursor:pointer;
+
+            }
+
+            li {
+                width: 100%;
+                margin-top: 30px;
+            }
+
+        }
+
+        i.bi-justify {
+            display: block;
+            width: 50px;
+            height: 50px;
+            background: $brighterColor;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
     }
 }
 
